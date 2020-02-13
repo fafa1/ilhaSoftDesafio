@@ -3,9 +3,9 @@
     <h3>Filmes TOP!</h3>
     <ul class="flex-box">
       <li v-for="item in withPhoto" :key="item.id">
-        <router-link :to="{ name: 'Detalhe', params: { id: item.imdbID }}">
+        <a class="pointer" @click="alertar(item.imdbID)">
           <img :src="item.Poster" :alt="item.Title">
-        </router-link>
+        </a>
       </li>
     </ul>
   </div>
@@ -26,17 +26,15 @@ export default {
   },
 
   methods: {
-    ...mapActions('Category', ['setList']),
+    ...mapActions('Category', ['setList', 'setListDetail']),
 
     alertar(id) {
-      debugger
-      alert(id)
+      this.setListDetail(id)
     }
   },
 
   computed: {
     ...mapState('Category', ['list']),
-    ...mapGetters('Category', ['leanList']),
 
     withPhoto() {
       return this.list.filter(item => item.Poster !== 'N/A')
@@ -58,5 +56,8 @@ export default {
   }
   h3 {
     text-align: center;
+  }
+  .pointer {
+    cursor: pointer;
   }
 </style>
