@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Category from '@/components/category'
-import Detalhe from '@/components/detalhe'
+import Detalhe from '@/components/detalheFilme'
+import Playlist  from '@/components/playList'
 
 Vue.use(Router)
 
@@ -15,10 +16,15 @@ export default new Router({
       component: Category
     },
     {
-      path: '/d',
+      path: '/detalhe',
       name: 'Detalhe',
       component: Detalhe,
       props: true
+    },
+    {
+      path: '/playlist',
+      name: 'Playlist',
+      component: Playlist,
     }
   ]
 

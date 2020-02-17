@@ -17,8 +17,8 @@ export default {
 </script>
 
 <style>
-  .global {
-    max-width: 1200px;
-    margin: 0 auto;
+  body, div {
+    margin: 0;
+    padding: 0;
   }
 </style>

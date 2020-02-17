@@ -1,5 +1,7 @@
-const leanList = state => state.list.map(item => item.Title)
 
+const leanMovieList = state => state.filmeDepois.map(item => item.obj)
+const leanMovieListItera = state => state.filmeDepois
 export default {
-  leanList
+  leanMovieList,
+  leanMovieListItera
 }
