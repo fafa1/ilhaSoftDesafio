@@ -48,7 +48,7 @@ export default {
     ...mapActions("Category", ["setListDetail","setMovieAfter"]),
 
     assistirDepois () {
-      // alert('Adcionado a Playlist')
+      alert('Adcionado a Playlist')
       this.setMovieAfter(this.detalhe)
     },
 
@@ -58,7 +58,12 @@ export default {
   },
 
   computed: {
-    ...mapState("Category", ["detalhe"])
+    ...mapState("Category", ["detalhe"]),
+
+    // flag() {
+    //   d
+    //   if (!this.detalhe) return true
+    // }
   }
 };
 </script>
@@ -71,6 +76,7 @@ export default {
   .imagem-detalhe img{
     display: block;
     margin: 0 auto;
+    margin-top: 70px;
     padding: 20px 0;
   }
 

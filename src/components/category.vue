@@ -1,14 +1,11 @@
 <template>
- <!-- Componentizar -->
   <div class="size-page">
     <h3>Filmes TOP!</h3>
     <ul class="flex-box">
       <li v-for="item in withPhoto" :key="item.id">
         <router-link :to="{ name: 'Detalhe', params: { id: item.imdbID } }">
-        <!-- <a class="pointer" @click="movieDetail(item.imdbID)"> -->
           <img :src="item.Poster" :alt="item.Title">
         </router-link>
-        <!-- </a> -->
       </li>
     </ul>
   </div>
@@ -52,6 +49,7 @@ export default {
   .size-page {
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 90px;
   }
 
   .flex-box {

@@ -20,14 +20,12 @@ const setListDetail = async ({ commit }, obj) => {
 
 const setMovieAfter = ({ commit }, obj) => {
   if (obj) {
-    debugger
     commit('SET_MOVIE_AFTER', { obj })
   }
 }
 
 const removieMovieList = ({ commit }, objID) => {
   if (objID) {
-    debugger
     commit('REMOVE_MOVIE_LIST', { objID })
   }
 }

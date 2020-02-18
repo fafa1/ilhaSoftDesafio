@@ -24,7 +24,6 @@ export default {
     ...mapActions("Category", ['removieMovieList']),
 
     removerLista (id) {
-      debugger
       this.removieMovieList(id)
     }
   },
@@ -34,7 +33,6 @@ export default {
     ...mapGetters("Category", ['leanMovieList', 'leanMovieListItera']),
 
     playList() {
-      debugger
       return this.leanMovieList 
     }
   }

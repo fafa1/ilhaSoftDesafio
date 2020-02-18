@@ -74,7 +74,7 @@ export default {
 
   mounted() {
     this.detalhe
-  },
+  }
   
 }
 </script>
@@ -95,7 +95,7 @@ export default {
     display: inline-block;
   }
 
-  .body-detalhe > tr > th {
+  .body-detalhe tr th {
     color: #00ffff;
     padding-right: 10px
   }
