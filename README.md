@@ -1,21 +1,13 @@
-# vue-challenge-vuex
+# FILMES
 
-> fagner
+> Desafio Lista de Filmes
 
-## Build Setup
+## Página inicial dos Filmes
+![/src/img_readme/home_filmes.png]
 
-``` bash
-# install dependencies
-npm install
+## Página dos filmes listados para assitir depois
+![/src/img_readme/assistir_depois.png]
 
-# serve with hot reload at localhost:8080
-npm run dev
+## Página de detalhe dos Filmes
+![/src/img_readme/detalhe.png]
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
